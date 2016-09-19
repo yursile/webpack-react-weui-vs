@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Robots" contect="index,follow">
+<meta http-equiv="keywords" content="苹果,安卓,系统,Windows,免费"/>
+<meta http-equiv="description" content="玩转PC"/>
+<script src="/r/cms/jquery.js" type="text/javascript"></script>
+<script src="/r/cms/front.js" type="text/javascript"></script>
+<script src="/r/cms/www/red/js/common.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/r/cms/www/red/css/style.css" type="text/css" />
+<link href="/r/cms/www/red/emotion/css/emotion.css" rel="stylesheet" type="text/css" />
+
+<style>
+*{padding:0;margin:0}
+html {
+	_background-image: url(about:blank);     /*用浏览器空白页面作为背景*/
+	_background-attachment: fixed;           /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/
+}
+
+
+
+
+#jstime-demo{width:600px;height:2000px;margin:0 auto;}
+</style>
+<script type="text/javascript">
+$(function() {
+  Cms.attachment("","47586","0","attach");
+  Cms.viewCount("","47586");
+});
+</script>
+<title> 微软良心之作——Visual Studio Code </title>
+
+
+</head>
+
+<body>
+	<div id="page">
+		<div class="bg">
+			<div class="head">
+				<a href="http://www.it-times.com.cn/"><img src="/r/cms/www/red/img/logo.gif" class="logo" alt="IT时报"></a>
+<!--search_begin-->
+
+
+<div class="head_content">
+
+<div class="search">
+<form action="/search.jspx" target="_blank">
+
+
+        <input name="q" value="请输入关键词" type="text" id="txtKey" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" maxlength="24" autocomplete="off" class="ipt_01" />
+		<span id="fid_box">
+		
+		</span>
+<input id="button" class="btn_01" type="submit" value="" name="button">
+      </form>
+					</div>
+					<div class="hot">
+						<p><strong>热门关键词：</strong><span>
+<a href="/tag/177.jspx" target="_blank">手机</a> | <a href="/tag/97.jspx" target="_blank">苹果</a> | <a href="/tag/216.jspx" target="_blank">三星</a> | <a href="/tag/285.jspx" target="_blank">App</a>
+</span></p>
+
+					</div>					<a href="/rss.jspx" target="_blank"><img src="/r/cms/www/red/img/1px.gif" class="rss" alt="" /></a>
+
+</div><!--search_end-->
+				
+			</div>
+			<!--header_begin-->
+<script src=" http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect(" http://siteapp.baidu.com/webapp/www.it-times.com.cn","http://www.it-times.com.cn");</script>
+
+<script src="/r/cms/www/red/js/tagswitch.js" type="text/javascript"></script>
+
+
+			<div class="nav2">
+				<ul class="nav_main" id="a2">
+                        <li><a href="/" target="_blank">首页</a></li>
+			<li><a href="/news/index.jhtml" target="_blank">新闻</a></li>
+                        <li><a href="/opinion/index.jhtml" target="_blank">评论</a></li>
+                        <li><a href="/yejie/index.jhtml" target="_blank">业界</a></li>
+                        <li><a href="/dianxin/index.jhtml" target="_blank">电信</a></li>
+                        <li><a href="/kuwan/index.jhtml" target="_blank">酷玩</a></li>
+                        <li><a href="/shuma/index.jhtml" target="_blank">数码</a></li>
+                        <li><a href="/rezhan/index.jhtml" target="_blank">热站</a></li>
+                        <li><a href="/wangshi/index.jhtml" target="_blank">网事</a></li>
+                        <li><a href="/iptv/index.jhtml" target="_blank">IPTV</a></li>
+                        <li><a href="/manhua/index.jhtml" target="_blank">漫画</a></li>
+                        <li><a href="/luntan/index.jhtml" target="_blank">热帖</a></li>
+                       <li><a href="http://bbs.it-times.com.cn/" target="_blank">论坛</a></li>
+                        <li><a href="http://bbs.it-times.com.cn/thread.php?fid=14" target="_blank">读者俱乐部</a></li>
+				</ul>
+				<div class="nav_sub" id="b2">
+                                        <ul></ul>
+					<ul>
+						<li><a href="/tongxin/index.jhtml" target="_blank">通信</a></li>
+						<li><a href="/hulianwang/index.jhtml" target="_blank">互联网</a></li>
+						<li><a href="/it/index.jhtml" target="_blank">IT</a></li>
+						<li><a href="/chanpin/index.jhtml" target="_blank">产品</a></li>
+						<li><a href="/jiadian/index.jhtml" target="_blank">家电</a></li>
+						<li><a href="/renwu/index.jhtml" target="_blank">人物</a></li>
+						<li><a href="/xinshenghuo/index.jhtml" target="_blank">新生活</a></li>
+					</ul>
+					<ul>
+						<li><a href="/shibaoshihua/index.jhtml" target="_blank">时报实话</a></li>
+						<li><a href="/yizhouqishi/index.jhtml" target="_blank">一周柒事</a></li>
+						<li><a href="/zhuanjialundao/index.jhtml" target="_blank">专家论道</a></li>
+						<li><a href="/guandianhuicui/index.jhtml" target="_blank">观点荟萃</a></li>
+					</ul>
+					<ul>
+						<li><a href="/dongtai/index.jhtml" target="_blank">动态</a></li>
+						<li><a href="/chanye/index.jhtml" target="_blank">产业</a></li>
+						<li><a href="/jishu/index.jhtml" target="_blank">技术</a></li>
+					</ul>
+					<ul>
+						<li><a href="/lehuodianxin/index.jhtml" target="_blank">乐活电信</a></li>
+						<li><a href="/zhihuichengshi/index.jhtml" target="_blank">智慧城市</a></li>
+						<li><a href="/dianxinwenba/index.jhtml" target="_blank">电信问吧</a></li>
+					</ul>
+					<ul>
+						<li><a href="/wanzhuanpc/index.jhtml" target="_blank">玩转PC</a></li>
+						<li><a href="/zhangzhongqiankun/index.jhtml" target="_blank">掌中乾坤</a></li>
+						<li><a href="/xiaoxinbangbangmang/index.jhtml" target="_blank">小昕帮帮忙</a></li>
+					</ul>
+					<ul>
+						<li><a href="/guanchazhan/index.jhtml" target="_blank">观察站</a></li>
+						<li><a href="/saodian/index.jhtml" target="_blank">扫店</a></li>
+						<li><a href="/shuxingma/index.jhtml" target="_blank">星数码</a></li>
+						<li><a href="/diannao/index.jhtml" target="_blank">电脑</a></li>
+						<li><a href="/shouji/index.jhtml" target="_blank">手机</a></li>
+						<li><a href="/shuyu/index.jhtml" target="_blank">数娱</a></li>
+						<li><a href="/jiadian/index.jhtml" target="_blank">家电</a></li>
+					</ul>
+					<ul>
+						<li><a href="/wangzhidaohang/index.jhtml" target="_blank">网址导航</a></li>
+						<li><a href="/vbo/index.jhtml" target="_blank">V客</a></li>
+					</ul>
+					<ul>
+						<li><a href="/relawangshi/index.jhtml" target="_blank">热辣网事</a></li>
+						<li><a href="/yizhouhongren/index.jhtml" target="_blank">一周红人</a></li>
+						<li><a href="/yuchujingren/index.jhtml" target="_blank">语出惊人</a></li>
+					</ul>
+					<ul>
+                                                <li><a href="/meizhoutuijian/index.jhtml" target="_blank">每周推荐</a></li>
+						<li><a href="/shouyingzhuanqu/index.jhtml" target="_blank">首映专区</a></li>
+						<li><a href="/xinzengdianbo/index.jhtml" target="_blank">新增点播</a></li>
+						<li><a href="/bangdan/index.jhtml" target="_blank">榜单</a></li>
+						
+					</ul>
+					<ul>
+                                                <li><a href="/shuohuaxinwen/index.jhtml" target="_blank">画说新闻</a></li>
+						<li><a href="/daxiaoit/index.jhtml" target="_blank">大笑IT</a></li>
+
+					</ul>
+					<ul>
+						<li><a href="/weiquanzaixian/index.jhtml" target="_blank">维权在线</a></li>
+						<li><a href="/tongxinren/index.jhtml" target="_blank">通信人</a></li>
+						<li><a href="/shumajiaoliu/index.jhtml" target="_blank">数码交流</a></li>
+						<li><a href="/youmomanhua/index.jhtml" target="_blank">幽默漫画</a></li>
+						<li><a href="/youmomanhua/index.jhtml" target="_blank">读者俱乐部</a></li>
+					</ul>
+					<ul>
+                                        </ul>
+					<ul>
+					</ul>
+				</div>
+			</div>                        <!--header_end-->
+			<div class="list_main">
+				<div class="main_left">
+					<div class="docu">
+<div class="crump">
+   <p>您现在正在浏览： <a href="/">首页</a> &raquo; <a href="/kuwan/" target="_blank">酷玩</a> &raquo; <a href="/wanzhuanpc/index.jhtml" target="_blank">玩转PC</a> &raquo; 正文
+						</p></div>
+			
+						<h1> 微软良心之作——Visual Studio Code </h1>
+          <h2>发布时间： 2015-04-30 19:20:08 &nbsp; 作者：异次元世界 &nbsp; 来源： <a href="" target="_blank">异次元世界</a>
+          <div id="div" style="display:none;">&nbsp;  浏览次数：<span id="views"></span> &nbsp;</div> </h2>
+          <div class="summary">
+		  	<p><strong>摘要：</strong> 它只是一款轻量级的代码编辑器，而不是一个重量级的完整 IDE (集成开发环境)。</p>
+		  </div>
+	 		  <div class="content">
+            <p>相信很多程序员同学都没想过有一天能在不用虚拟机的情况下直接在 Mac、Linux 上使用 VisualStudio 吧。当然，微软称 Visual Studio Code 并非完整版的 Visual Studio，它只是一款轻量级的代码编辑器，而不是一个重量级的完整 IDE (集成开发环境)，它的竞争对手将会是 Sublime Text、Atom、VIM、Notepad++ 等产品。</p>
+<p>Visual Studio Code 是微软首次为开发者提供「跨平台」的代码编辑器，微软开发部门负责人称：&ldquo;虽然许多人把 Windows 作为开发环境，但还有很多人用的是 Linux 和 Mac，与其说服这些人改用 Windows，不如在他们使用的平台上提供工具满足其要求。&rdquo; 可以预见，VSC 的推出将会在开发界掀起轩然大波。</p>
+<p>VS Code</p>
+<p>VSC 的编辑器界面依然是微软经典的 VS 风格，对于常接触的人来说会很亲切。在编程语言和语法上支持 C++, jade, PHP, Python, XML, Batch, F#, DockerFile, Coffee Script, Java, HandleBars, R, Objective-C, PowerShell, Luna, Visual Basic, Markdown, JavaScript, JSON, HTML, CSS, LESS, SASS, C#, TypeScript (支持情况)。</p>
+<p>经实际体验测试，VS Code 的启动速度以及打开大型文件的速度都非常迅速流畅，完全不卡，加载大文件几乎秒开，相比 Atom、Sublime Text 等感觉都要优秀！这一点对于某些追求效率的朋友来说的确非常诱人！</p>
+<p>个人认为 VSC 对WEB和前端开发相对比较友好，相信日后会有不少如 PHP、Python、Ruby、Go、JS、Node 等的开发者会切换到 VSCode 来，它更像一个 WEB 开发界的 VS。</p>
+<p>Visual Studio Code 使用演示视频：</p>
+<p><br />
+目前比较失望的是 Visual Studio Code 没有中文界面，而且也还没有开放插件扩展功能，不过从配置文件里的配置项命名空间看明显就是插件架构的，估计日后会在新版本开放，相信以微软的号召力，插件丰富繁荣起来应该不是什么问题。<br />
+总结：</p>
+<p>话说当微软在发布会上宣布推出完全免费且跨平台的 Visual Studio Code 时，我还是惊喜地拍了掌！作为一个主力使用 Mac 的小码农，看到 VS 可以在三大平台上运行的时候还真是挺激动的。</p>
+<p>微软这近段时间来不断开放的姿态，越来越让我们看到微软的情怀和未来。有人说 VSC 的推出又多了一个买 Mac 的理由了，不过其实细想，随着 .Net 的开源，加上免费的 VS Code 铺路，反而是能让一大批开发高手重新回到微软的大环境中，不得不说微软这次又下了一手好棋啊。</p>
+ </div>
+
+		  
+
+	<div class="pagebar"></div>
+            <ul class="prvnxt">
+              <li><strong>上一篇：</strong><a href="/wanzhuanpc/47588.jhtml"> Cmd Markdown – 本地 Markdown 编辑阅读器</a></li>
+              <li><strong>下一篇：</strong><a href="/wanzhuanpc/47585.jhtml"> 深度 Deepin 2014 正式版 ISO 镜像下载</a></li>
+            </ul>
+<!--转帖复制打印开始-->
+<div class="share">
+<p> 
+
+
+
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365400080517930" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+</p>
+</div><!--转帖复制打印结束--> 
+
+	<!--网友评论_Begin-->
+<div id="commentListContainer" style="margin-top:10px; line-height:22px; clear:both; float:left; width:620px; margin-left:20px; display:inline; text-align:left;" >
+             <dl class="rmpl">
+            <dt><span>暂无相关评论！</span></dt>
+          </dl>   
+</div>
+<script type="text/javascript">
+//$(function(){
+
+//	Cms.commentList("","commentListContainer",{contentId:47586,orderBy:0,count:5});
+//});
+</script><div class="comment" style="padding-bottom:10px; clear:both;">
+  <h2><span>网友评论</span> 已有 <em>0</em> 条评论<!--，<a href="/comment.jspx?contentId=47586" target="_blank">查看更多评论&raquo;</a>--></h2>
+  <div style="margin-top:5px; float:left;"> 
+  <form id="commentForm" action="/comment.jspx" method="post">
+  <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#EAEAEA" style="margin-top:10px;">
+    <tr>
+      <td width="19%" height="80" align="right" bgcolor="#FaFaFa"><strong>评论内容：</strong></td>
+      <td width="81%" bgcolor="#FFFFFF"><textarea name="text" class="cinput" style="width:500px;" rows="5" id="publish_text2"></textarea>
+       <img src="/r/cms/www/red/emotion/images/emotions/normal/smile.gif" onclick="putEmo(1);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/tooth.gif" onclick="putEmo(2);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/laugh.gif" onclick="putEmo(3);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/love.gif" onclick="putEmo(4);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/dizzy.gif" onclick="putEmo(5);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/sad.gif" onclick="putEmo(6);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/cz_org.gif" onclick="putEmo(7);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/crazy.gif" onclick="putEmo(8);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/hate.gif" onclick="putEmo(9);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/tz_org.gif" onclick="putEmo(10);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/angry.gif" onclick="putEmo(11);" style="float:left;"/>
+<img src="/r/cms/www/red/emotion/images/emotions/normal/sweat.gif" onclick="putEmo(12);" style="float:left;"/>
+</td>
+    </tr>
+    <tr>
+      <td width="19%" align="right" bgcolor="#FaFaFa"><strong>验证码：</strong></td>
+      <td width="81%" bgcolor="#FFFFFF">
+	  <input name="captcha" type="text" id="captcha" vld="{required:true}" style="float:left; width:100px; border:1px solid #aaa; margin-top:15px; margin-right:10px;" />
+	  <img src="/captcha.svl" onclick="this.src='/captcha.svl?d='+new Date()" style="float:left;"/>
+            </br>【如看不清，点击验证码更换一张。】
+	  </td>
+
+    </tr>
+    <tr>
+      <td height="30" colspan="2" align="center" bgcolor="#FFFFFF"><input type="hidden" name="contentId" value="47586"/>
+        <input type="submit" name="Submit" value=" 马上发表 " />
+        【网友评论仅供其表达个人看法，并不表明本站同意其观点或证实其描述。】 </td>
+    </tr>
+</form>
+
+  </table>
+
+<script type="text/javascript">
+function putEmo(emo){
+
+if( emo ==1 ){
+var area = $("#publish_text2").val()+"同意！";
+ $("#publish_text2").val(area);
+}
+if(emo == 2){
+var area = $("#publish_text2").val()+"欢笑！";
+ $("#publish_text2").val(area);
+}
+if(emo == 3){
+var area = $("#publish_text2").val()+"大笑！";
+ $("#publish_text2").val(area);
+}
+if(emo == 4){
+var area = $("#publish_text2").val()+"爱你！";
+ $("#publish_text2").val(area);
+}
+if(emo == 5){
+var area = $("#publish_text2").val()+"我晕！";
+ $("#publish_text2").val(area);
+}
+if(emo == 6){
+var area = $("#publish_text2").val()+"落泪！";
+ $("#publish_text2").val(area);
+}
+if(emo == 7){
+var area = $("#publish_text2").val()+"装傻！";
+ $("#publish_text2").val(area);
+}
+if(emo == 8){
+var area = $("#publish_text2").val()+"抓狂！";
+ $("#publish_text2").val(area);
+}
+if(emo == 9){
+var area = $("#publish_text2").val()+"生气！";
+ $("#publish_text2").val(area);
+}
+if(emo == 10){
+var area = $("#publish_text2").val()+"可爱！";
+ $("#publish_text2").val(area);
+}
+if(emo == 11){
+var area = $("#publish_text2").val()+"愤怒！";
+ $("#publish_text2").val(area);
+}
+if(emo == 12){
+var area = $("#publish_text2").val()+"无视！";
+ $("#publish_text2").val(area);
+}
+}
+$(function() {
+/*
+	$("#commentForm").validate( {
+		submitHandler : function(form) {
+			$(form).ajaxSubmit( {
+				"success" : function(data) {
+					if(data.success) {
+						alert("评论成功");
+						location.href=location.href;
+					} else {
+						alert("评论失败");
+					}
+				},
+				"dataType" : "json"
+			});
+		}
+	});
+*/
+
+	Cms.comment(function(data) {
+
+		if(data.status==0) {
+			alert("评论成功");
+			location.href=location.href;
+		} else if(data.status==1) {	
+			alert("验证码错误");
+			$("#commentCaptcha").click();
+		} else if(data.status==2) {	
+			alert("内容不存在");
+			$("#commentCaptcha").click();
+		} else if(data.status==3) {	
+			alert("评论关闭");
+			$("#commentCaptcha").click();
+		} else if(data.status==4) {	
+			alert("需要登录评论");
+			$("#commentCaptcha").click();
+		} else if(data.status==100) {	
+			alert("内容不存在");
+			$("#commentCaptcha").click();
+		} else if(data.status==101) {	
+			alert("评论不能为空");
+			$("#commentCaptcha").click();
+		} else {
+			alert("评论失败");
+			$("#commentCaptcha").click();
+		}
+	});
+});
+</script>
+  </div>
+</div>
+
+
+
+
+
+
+		<!--网友评论_End-->
+					</div>
+
+				</div>
+<!--right_begin-->
+<div class="main_right">
+					<div class="investigation">
+						<form name="votes" action="/vote.jspx" method="post" target="_blank">
+ <ul>
+      <li class="invest_title">华为P9要卖近4000元，你买吗？
+        <input type="hidden" name="voteId" value="149"/></li>
+     <li><input type="radio" name="itemIds" value="543"/>
+      <td width="91%" align="left">买，信赖华为的品质</li>
+    </tr>
+     <li><input type="radio" name="itemIds" value="544"/>
+      <td width="91%" align="left">不买，赶上水果价了。</li>
+    </tr>
+     <li><input type="radio" name="itemIds" value="545"/>
+      <td width="91%" align="left">没兴趣</li>
+    </tr>
+    </ul>
+          <input type="submit" class="btn_02" value="投 票" onClick="return check_votes(1)"/>
+        &nbsp; <a href="/vote_result.jspx?voteId=149" target="_blank">查看投票结果</a> 
+</form>
+>
+					</div>
+					<div class="top10">
+						<h1>热点新闻排行榜</h1>
+						<ul>
+          <li><span class="top1">1</span><a href="/dianxinwenba/28491.jhtml" title="实名制补登 不去营业厅也行" target="_blank">实名制补登 不去营业厅也行</a></li>
+          <li><span class="top1">2</span><a href="/meizhoutuijian/35789.jhtml" title="微信免费看大片" target="_blank">微信免费看大片</a></li>
+          <li><span class="top1">3</span><a href="/wzit/46540.jhtml" title="如何将微信中的图片和内容保存到电脑里？" target="_blank">如何将微信中的图片和内容保存到</a></li>
+          <li><span class="top1">4</span><a href="/lhdx/41110.jhtml" title="爱看、爱玩、爱听  免流量随便玩" target="_blank">爱看、爱玩、爱听  免流量随便玩</a></li>
+          <li><span class="top1">5</span><a href="/wangzhidaohang/11215.jhtml" title="多芒网：Metro风格的影视聚合分享及推荐网站" target="_blank">多芒网：Metro风格的影视聚合分</a></li>
+          <li><span class="top1">6</span><a href="/lhdx/49109.jhtml" title="电信宽带怎么移机？要收费吗？" target="_blank">电信宽带怎么移机？要收费吗？</a></li>
+          <li><span class="top1">7</span><a href="/dianxinwenba/44317.jhtml" title="忘记了宽带账号和密码，怎么办？" target="_blank">忘记了宽带账号和密码，怎么办？</a></li>
+          <li><span class="top1">8</span><a href="/xiaoxinbangbangmang/45238.jhtml" title="如何删除个人微信里僵尸粉？" target="_blank">如何删除个人微信里僵尸粉？</a></li>
+          <li><span class="top1">9</span><a href="/wzit/45105.jhtml" title="手把手教你给Kindle刷多看系统" target="_blank">手把手教你给Kindle刷多看系统</a></li>
+          <li><span class="top1">10</span><a href="/wanzhuanpc/31989.jhtml" title="轻松给Kindle更换字体" target="_blank">轻松给Kindle更换字体</a></li>
+          </ul>
+					</div>
+					<div class="complain1">
+						<div class="contact1">
+							<h1>维权在线</h1>
+							<p>邮箱：it-times@189.cn</p>
+							<p>电话：86-021-63632347</p>
+						</div>
+						<a href="http://bbs.it-times.com.cn/thread.php?fid=5" target="_blank"><img src="/r/cms/www/red/img/btn_complain.gif" class="btn_complain1" alt="我要投诉"></a>
+						<div class="complain_list1">
+							
+							<ul>
+
+
+								<li><a href="/weiquanzaixian/48056.jhtml" target="_blank">央视《每周质量报告》报道称京东商城上又...</a></li>
+
+
+
+								<li><a href="/weiquanzaixian/46369.jhtml" target="_blank">小米2S手机购买后频繁出现屏幕失灵和跳屏...</a></li>
+
+
+
+								<li><a href="/weiquanzaixian/38434.jhtml" target="_blank">记者用吴家的台式电脑，进行了多次测试，...</a></li>
+
+
+
+								<li><a href="/weiquanzaixian/36693.jhtml" target="_blank">用户个人信息泄露后被限制购买   经销商...</a></li>
+
+
+
+								<li><a href="/weiquanzaixian/57653.jhtml" target="_blank"></a></li>
+
+
+
+								<li><a href="/weiquanzaixian/57518.jhtml" target="_blank"></a></li>
+
+
+							</ul>
+						</div>
+					</div>
+					<div class="help">
+						<h1></h1>
+					<div class="helpbody">
+
+<iframe src="http://sh.qihoo.com/hot/frame.html?src=out_it-times&w=220&h=120" width="220" height="360"  frameborder=”no” border=”0″ marginwidth=”0″ marginheight=”0″ scrolling=”no” allowtransparency=”yes”>
+</iframe> 
+					</div>
+					</div>
+				</div>
+			</div><!--right_end-->
+				
+<!--right_begin-->
+<div class="bottom">
+				<ul>
+					<li><a href="/guanzhu/index.jhtml" target="_blank">关注我们</a></li>
+					<li><a href="/friend/index.jhtml" target="_blank">友情链接</a></li>
+					<li><a href="/say/index.jhtml" target="_blank">网站申明</a></li>
+					<li><a href="/tous/index.jhtml" target="_blank">联系我们</a></li>
+					<li><a href="http://bbs.it-times.com.cn/" target="_blank">我要留言</a></li>
+					<li><a href="/zhao/index.jhtml" target="_blank">招聘信息</a></li>
+				</ul>
+				<p>Copyright © 2007 www.IT-TIMES.com.cn All right reserved　<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备5043351号</a></p>
+				<p>IT时报网 内容未经许可 不许转载</p>
+
+
+			</div>
+
+
+<!-- 统计开始 -->
+<div style="display:none"> 
+<script src="http://s23.cnzz.com/stat.php?id=3678264&web_id=3678264&show=pic" language="JavaScript"></script>
+
+</div>
+<!-- 统计结束-->
+<!--baidu-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F65d23b07b969029809a7949f88e2bcfc' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--baidu--><!--right_end-->
+			
+		</div>
+	</div>
+<!--调用js-->
+<script language="javascript" type="text/javascript">
+function setCss(){
+	    var a=[];
+	    a.push(".back_to_top{display:none;width:50px;height:50px;overflow:hidden;right:140px;position:fixed; bottom:50px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-134));}\n");
+	    a.push(".back_to_top a{display:inline-block;width:50px;height:50px;overflow:hidden;background:url(http://ww4.sinaimg.cn/mw1024/ab118c56gw1ef87vfl685g202s01e0sj.gif) 0px 0px no-repeat;}\n");
+	    a.push(".back_to_top a:hover{background-position:-50px 0px}");
+	    try{
+	        var b=document.createStyleSheet();
+	        b.cssText=a.join("");
+	    } catch(c) {
+	        var b=document.createElement("style");
+	        b.type="text/css";
+	        b.textContent=a.join("");
+	        document.getElementsByTagName("HEAD").item(0).appendChild(b);
+	    }
+	}
+	 
+	function createLink(){
+	    var a=document.createElement("div");
+	    a.id="JS_back_to_top";
+	    a.className="back_to_top";
+	    a.innerHTML='<a href="#" title="返回顶部"></a>';
+	    document.body.appendChild(a);
+	}
+	 
+	function GetPageScroll(){
+	    var b,a;
+	    if(window.pageYOffset){
+	        a=window.pageYOffset;
+	        b=window.pageXOffset;
+	    } else {
+	        if(document.documentElement&&document.documentElement.scrollTop){
+	            a=document.documentElement.scrollTop;
+	            b=document.documentElement.scrollLeft;
+	        }else{
+	            if(document.body){
+	                a=document.body.scrollTop;b=document.body.scrollLeft;
+	            }
+	        }
+	    }
+	    return{x:b,y:a};
+	}
+	 
+	if(window.attachEvent){
+	    window.attachEvent("onscroll",backToTop);
+	}else{
+	    window.addEventListener("scroll",backToTop,false);
+	}
+	 
+	function backToTop(){
+	    // 200 表示到页面顶部大于200px时候，回到顶部图片出现
+	    if(GetPageScroll().y>200){
+	        document.getElementById("JS_back_to_top").style.display="block";
+	    }else{
+	        document.getElementById("JS_back_to_top").style.display="none";
+	    }
+	}
+	 
+	createLink();
+	 
+	setCss();
+</script>
+</body>
+</html>

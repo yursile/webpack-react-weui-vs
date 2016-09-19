@@ -1,0 +1,83 @@
+// Available variables which can be used inside of strings.
+// ${workspaceRoot}: the root folder of the team
+// ${file}: the current opened file
+// ${fileBasename}: the current opened file's basename
+// ${fileDirname}: the current opened file's dirname
+// ${fileExtname}: the current opened file's extension
+// ${cwd}: the current working directory of the spawned process
+{
+	"version": "0.1.0",
+	"command": "npm",
+	"isShellCommand": true,
+	"echoCommand": false,
+	"suppressTaskName": true,
+	"showOutput": "always",
+	"tasks": [
+		{
+			"args": [
+				"run",
+				"dev"
+			],
+			"problemMatcher": [
+				{
+					"owner": "custom",
+					"pattern": [],
+					"watching": {
+						"activeOnStart": true,
+						"beginsPattern": "webpack: bundle is now INVALID",
+						"endsPattern": "webpack: bundle is now VALID"
+					}
+				},
+				{
+					"owner": "javascript",
+					"severity": "error",
+					"applyTo": "closedDocuments",
+					"fileLocation": "absolute",
+					"pattern": [
+						{
+							"regexp": "^(Module build failed:\\s.*?:\\s(.*):(.*?))[\\s+](?:\\(([\\d-]+):([\\d-]+)\\))?$",
+							"message": 3,
+							"file": 2,
+							"line": 4,
+							"column": 5
+						}
+					]
+				},
+				{
+					"owner": "javascript",
+					"severity": "error",
+					"applyTo": "closedDocuments",
+					"fileLocation": "relative",
+					"pattern": [
+						{
+							"regexp": "^ERROR in ./(.*)\\s?$",
+							"file": 1
+						},
+						{
+							"regexp": "^.*?Error:\\s(.*').*$",
+							"message": 1
+						},
+						{
+							"regexp": "^\\s+@.*?(\\d+)(?:-([\\d]+))?:(\\d+)(?:-([\\d]+))?\\s?$",
+							"line": 1,
+							"endLine": 2,
+							"column": 3,
+							"endColumn": 4
+						}
+					]
+				}
+			],
+			"isWatching": true,
+			"taskName": "development"
+		},
+
+
+        {
+			"args": [
+				"run",
+				"online"
+			],
+			"taskName": "online"
+		}
+	]
+}

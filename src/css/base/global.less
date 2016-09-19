@@ -1,0 +1,55 @@
+.abs(@l:0,@t:0){
+	left:@l;
+	top:@t;
+	position: absolute;	
+}
+
+
+// 绝对定位
+// 占父元素100%宽高
+.wrapper(){
+	.abs();
+	width: 100%;
+	height: 100%;
+}
+
+
+
+//将文字放在了div里，
+// div默认为100%宽;
+.abs_text(@t){
+	.abs(0,@t);
+	right:0;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+//启动3D加速
+.ani_a(){
+	transform:translateZ(0);
+}
+
+
+//呼吸效果  半透明到透明;
+.breath{
+  animation-name:breath;
+  @keyframes breath{
+    0%{
+      opacity: 1
+    }
+
+    40%{
+      opacity: 0.5
+    }
+
+    80%{
+      opacity: 1
+    }
+
+  
+    100%{
+      opacity: 1;
+    }
+  }
+}

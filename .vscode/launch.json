@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+	    {
+            "name": "Debug",
+            "type": "chrome",
+            "request": "launch",
+            "webRoot": "${workspaceRoot}",
+            "url": "http://localhost:8080/index.html", 
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "sourceMaps": true,
+            "preLaunchTask": "development",
+            "diagnosticLogging":true
+        }
+
+	]
+}
