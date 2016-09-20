@@ -1,7 +1,6 @@
 import React from 'react';
 import Page from '../tools/page';
 import SampleData from '../data/nameDB';
-
 import {
     //main component
     SearchBar,

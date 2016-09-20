@@ -1,6 +1,7 @@
-# webpack-react-weui
+# webpack-react-weui-vs
 ### react微信开发模板
 
+* **集成vs环境**
 * **es6**
 * **reactweui**
 * **react热插拔**
@@ -10,6 +11,9 @@
 * 依赖webpack,如没有安装,npm install -g webpack webpack-dev-server
 * **npm run dev** 在本地8080端口起测试服务,引用的所有文件都在内存，不在硬盘上，更新速度飞快
 * **npm run online** 在硬盘上生成online.config.js中指定的ROOT文件夹，直接发布ROOT包即可
+## 如果在VS环境下：
+
+* 直接点击debug按钮，会自动运行npm run dev
 
 # 说明
 
@@ -17,7 +21,13 @@
 ### 目录结构
 
 ```
-.
+├── .vscode                      
+|    ├── lanch.json               # debug环境所需文件
+|    ├── setting.json             # vs环境配置文件
+|    └── task.json                # task，可以把npm run dev等命令集成进去
+├── jsconfig.json                 # 智能提示引入的外部类中的方法，变量
+├── typings.json                  # 通过node_moudles引入的比如react，需要typings才会有提示
+|
 ├── online.config.js              # 上线配置文件，运行npm run online
 ├── webpack.config.js             # 开发配置文件,npm run dev
 ├── rem.template.handlebars       # 雪碧图生成模板
@@ -84,10 +94,17 @@
 * **集成有ES6开发环境**
 
 
+### 调试
+* **通过上述文件结构中vs的配置，可在vscode中调试代码**
+* **[关于vscode的使用](https://code.visualstudio.com/docs)**
+* **vscode界面如下**
+
+<img alt="VS Code in action" src="http://i0.itc.cn/20160920/3649_1f86a622_bacf_bc62_0eac_ccd1ef5dfaa4_1.png">
+
 ### 上线
 在online.config.js中有如下代码
-
-	var ROOT = "yursile/fuckdd/"
+```javascript
+    var ROOT = "yursile/fuckdd/"
 	
 	output:{
         path: path.join(__dirname,ROOT),
@@ -95,7 +112,7 @@
         filename: "js/[name].js",
         chunkFilename: "js/[id].chunk.js"
     },
-
+```
 * **path:**  会在根目录生成ROOT中指定的目录结构，直接打包上传ROOT目录，(例子中会生成yursile目录)
 
 	如需要index.html单独提出来，直接发布index.html即可，**不用再换里面链接**
@@ -119,3 +136,4 @@ new HtmlWebpackPlugin({
 * **解决windows shell问题**
 * **添加底部导航，tab板块**
 * **添加实时动态搜索，search板块**
+* **添加vs支持**

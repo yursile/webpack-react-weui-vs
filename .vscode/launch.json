@@ -9,7 +9,7 @@
             "url": "http://localhost:8080/index.html", 
             "userDataDir": "${workspaceRoot}/.vscode/chrome",
             "sourceMaps": true,
-            "preLaunchTask": "development",
+            // "preLaunchTask": "development",
             "diagnosticLogging":true
         }
 
